@@ -1,8 +1,9 @@
 import React from 'react';
-import '../App.css';
+import './Form.css';
 
 export default function gameForm(props){
     return(
+        <main className="container"> 
         <form>
         <h1>Enter Guess Below</h1>
         <input placeholder="Enter Guess" type="text"></input>
@@ -10,5 +11,6 @@ export default function gameForm(props){
         <div className="guessCount">Guess #</div>
         <div className="guesses">Guesses:</div>
       </form>
+      </main>
     )
 }

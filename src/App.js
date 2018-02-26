@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import GameForm from './components/gameform';
-import NavBar from './components/navbar'
+import NavBar from './components/navbar';
+import Banner from './components/banner';
 
 class App extends Component {
   render() {
@@ -10,17 +10,11 @@ class App extends Component {
 
     
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hot and Cold</h1>
-          <NavBar/>
-        </header>
-        <main className="container"> 
+      <div className ="App">
+        <Banner/>
+        <NavBar/>
        <GameForm/>
-        </main>
-
-      </div>
+       </div>
     );
   }
 }
